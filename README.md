@@ -47,7 +47,22 @@ Installation
         modified:   package.json
         modified:   yarn.lock
 
-1.5.5 Create a static page with navbar 14:25
+### 1.5.5 Create a static page with navbar 14:25
+
+     > create home page: rails g controller Pages home
+        modified:   Gemfile
+        modified:   Gemfile.lock
+        modified:   README.md
+        renamed:    app/assets/stylesheets/application.css -> app/assets/stylesheets/application.scss
+        new file:   app/assets/stylesheets/pages.scss
+        new file:   app/controllers/pages_controller.rb
+        new file:   app/helpers/pages_helper.rb
+        modified:   app/views/layouts/application.html.erb
+        new file:   app/views/pages/home.html.erb
+        new file:   app/views/shared/_navbar.html.erb
+        modified:   config/routes.rb
+        new file:   test/controllers/pages_controller_test.rb
+
 
 Task 2 - Authentication with email
 
