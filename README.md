@@ -28,13 +28,25 @@ Installation
     :)
         new file:   README.md
 
-### 1.2.2.1 Create github repository
+### 1.3.3 Source Control with Github 5:31
 
         modified:   README.md
     	  > https://github.com/ingafter60/rails-freelancer
 
-1.3.3 Source Control with Github 5:31  
-1.4.4 Installing Bulma and jQuery 9:49  
+### 1.4.4 Installing Bulma and jQuery 9:49
+
+     > add bulma gems to gemfile
+     > import bulma to application.css
+     > bundle install
+     > install jquery: yarn add jquery
+        modified:   Gemfile
+        modified:   Gemfile.lock
+        modified:   README.md
+        modified:   app/assets/stylesheets/application.css
+        modified:   config/webpack/environment.js
+        modified:   package.json
+        modified:   yarn.lock
+
 1.5.5 Create a static page with navbar 14:25
 
 Task 2 - Authentication with email
