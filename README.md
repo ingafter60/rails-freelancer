@@ -1,5 +1,7 @@
 # Build marketplace for freelancers like Fiverr with Rails 6.0.3.4 Ruby 2.6.6 and Postgresql - Level 1
 
+https://github.com/ingafter60/rails-freelancer
+
 Intro
 
 Vision of this project 2:54  
@@ -26,6 +28,10 @@ Installation
     :)
         new file:   README.md
 
+### 1.2.2.1 Create github repository
+
+        modified:   README.md
+    	  > https://github.com/ingafter60/rails-freelancer
 
 1.3.3 Source Control with Github 5:31  
 1.4.4 Installing Bulma and jQuery 9:49  
