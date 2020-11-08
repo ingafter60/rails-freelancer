@@ -125,7 +125,17 @@ Installation
         new file:   db/migrate/20201108004905_add_columns_to_user.rb
         modified:   db/schema.rb
 
-2.4.9 Update authentication views 11:39  
+### 2.4.9 Update authentication views 11:39
+
+        modified:   README.md
+        modified:   app/models/user.rb
+        modified:   app/views/devise/confirmations/new.html.erb
+        modified:   app/views/devise/passwords/edit.html.erb
+        modified:   app/views/devise/passwords/new.html.erb
+        modified:   app/views/devise/registrations/edit.html.erb
+        modified:   app/views/devise/registrations/new.html.erb
+        modified:   app/views/devise/sessions/new.html.erb
+
 2.5.10 Update styles 8:28
 
 Task 3 - Authentication with Facebook
