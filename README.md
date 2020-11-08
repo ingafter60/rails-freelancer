@@ -63,11 +63,52 @@ Installation
         modified:   config/routes.rb
         new file:   test/controllers/pages_controller_test.rb
 
+## Task 2 - Authentication with email
 
-Task 2 - Authentication with email
+### 2.1.6 What is task 2 about? 0:56
 
-2.1.6 What is task 2 about? 0:56  
-2.2.7 Create authentication with email and password 16:15  
+     > Task 2 introduction
+
+### 2.2.7 Create authentication with email and password 16:15
+
+      > add gem 'devise', '~> 4.6', '>= 4.6.2'
+      > bundle install
+      > rails g devise:install
+      > rails g devise User
+      > rails db:migrate
+      > rails g devise:views
+      > rails routes (to see routes for sign up, login, edit profile, and logout)
+      > create home route (root to: 'pages#home')
+        modified:   Gemfile
+        modified:   Gemfile.lock
+        modified:   README.md
+        new file:   app/models/user.rb
+        new file:   app/views/devise/confirmations/new.html.erb
+        new file:   app/views/devise/mailer/confirmation_instructions.html.erb
+        new file:   app/views/devise/mailer/email_changed.html.erb
+        new file:   app/views/devise/mailer/password_change.html.erb
+        new file:   app/views/devise/mailer/reset_password_instructions.html.erb
+        new file:   app/views/devise/mailer/unlock_instructions.html.erb
+        new file:   app/views/devise/passwords/edit.html.erb
+        new file:   app/views/devise/passwords/new.html.erb
+        new file:   app/views/devise/registrations/edit.html.erb
+        new file:   app/views/devise/registrations/new.html.erb
+        new file:   app/views/devise/sessions/new.html.erb
+        new file:   app/views/devise/shared/_error_messages.html.erb
+        new file:   app/views/devise/shared/_links.html.erb
+        new file:   app/views/devise/unlocks/new.html.erb
+        modified:   app/views/layouts/application.html.erb
+        modified:   app/views/shared/_navbar.html.erb
+        modified:   config/environments/development.rb
+        new file:   config/initializers/devise.rb
+        new file:   config/locales/devise.en.yml
+        modified:   config/routes.rb
+        new file:   db/migrate/20201107234442_devise_create_users.rb
+        new file:   db/schema.rb
+        new file:   test/fixtures/users.yml
+        new file:   test/models/user_test.rb
+
+
 2.3.8 Add custom fields to User model 6:53  
 2.4.9 Update authentication views 11:39  
 2.5.10 Update styles 8:28
