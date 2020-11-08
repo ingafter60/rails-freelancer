@@ -2,6 +2,8 @@
 
 https://github.com/ingafter60/rails-freelancer
 
+https://github.com/leotrieu/FiverrSAmpleCode
+
 Intro
 
 Vision of this project 2:54  
@@ -31,14 +33,14 @@ Installation
 ### 1.3.3 Source Control with Github 5:31
 
         modified:   README.md
-    	  > https://github.com/ingafter60/rails-freelancer
+    > https://github.com/ingafter60/rails-freelancer
 
 ### 1.4.4 Installing Bulma and jQuery 9:49
 
-     > add bulma gems to gemfile
-     > import bulma to application.css
-     > bundle install
-     > install jquery: yarn add jquery
+    > add bulma gems to gemfile
+    > import bulma to application.css
+    > bundle install
+    > install jquery: yarn add jquery
         modified:   Gemfile
         modified:   Gemfile.lock
         modified:   README.md
@@ -49,7 +51,7 @@ Installation
 
 ### 1.5.5 Create a static page with navbar 14:25
 
-     > create home page: rails g controller Pages home
+    > create home page: rails g controller Pages home
         modified:   Gemfile
         modified:   Gemfile.lock
         modified:   README.md
@@ -67,18 +69,18 @@ Installation
 
 ### 2.1.6 What is task 2 about? 0:56
 
-     > Task 2 introduction
+    > Task 2 introduction
 
 ### 2.2.7 Create authentication with email and password 16:15
 
-      > add gem 'devise', '~> 4.6', '>= 4.6.2'
-      > bundle install
-      > rails g devise:install
-      > rails g devise User
-      > rails db:migrate
-      > rails g devise:views
-      > rails routes (to see routes for sign up, login, edit profile, and logout)
-      > create home route (root to: 'pages#home')
+    > add gem 'devise', '~> 4.6', '>= 4.6.2'
+    > bundle install
+    > rails g devise:install
+    > rails g devise User
+    > rails db:migrate
+    > rails g devise:views
+    > rails routes (to see routes for sign up, login, edit profile, and logout)
+    > create home route (root to: 'pages#home')
         modified:   Gemfile
         modified:   Gemfile.lock
         modified:   README.md
@@ -110,15 +112,15 @@ Installation
 
 ### 2.3.8 Add custom fields to User model 6:53
 
-    	> add new columns to user table (full_name, from, about, language, status)
-    	λ rails g migration AddColumnsToUser full_name from about:text language status:boolean
-    	> add new user status to false
-    	> run migration
-    	λ rails db:migrate
-    	> validate user (models/user.db)
-    	> source for reading: https://guides.rubyonrails.orb/active_record_validations.html
-    	> add security to application_controller
-    	> source: https://github.com/heartcombo/devise#strong-parameters
+    > add new columns to user table (full_name, from, about, language, status)
+    λ rails g migration AddColumnsToUser full_name from about:text language status:boolean
+    > add new user status to false
+    > run migration
+    λ rails db:migrate
+    > validate user (models/user.db)
+    > source for reading: https://guides.rubyonrails.orb/active_record_validations.html
+    > add security to application_controller
+    > source: https://github.com/heartcombo/devise#strong-parameters
         modified:   README.md
         modified:   app/controllers/application_controller.rb
         modified:   app/models/user.rb
@@ -136,7 +138,14 @@ Installation
         modified:   app/views/devise/registrations/new.html.erb
         modified:   app/views/devise/sessions/new.html.erb
 
-2.5.10 Update styles 8:28
+### 2.5.10 Update styles 8:28
+
+        modified:   README.md
+        new file:   app/assets/stylesheets/styles.scss
+        modified:   app/views/devise/registrations/edit.html.erb
+        modified:   app/views/devise/registrations/new.html.erb
+        modified:   app/views/devise/sessions/new.html.erb
+        modified:   app/views/shared/_navbar.html.erb
 
 Task 3 - Authentication with Facebook
 
