@@ -108,8 +108,23 @@ Installation
         new file:   test/fixtures/users.yml
         new file:   test/models/user_test.rb
 
+### 2.3.8 Add custom fields to User model 6:53
 
-2.3.8 Add custom fields to User model 6:53  
+    	> add new columns to user table (full_name, from, about, language, status)
+    	λ rails g migration AddColumnsToUser full_name from about:text language status:boolean
+    	> add new user status to false
+    	> run migration
+    	λ rails db:migrate
+    	> validate user (models/user.db)
+    	> source for reading: https://guides.rubyonrails.orb/active_record_validations.html
+    	> add security to application_controller
+    	> source: https://github.com/heartcombo/devise#strong-parameters
+        modified:   README.md
+        modified:   app/controllers/application_controller.rb
+        modified:   app/models/user.rb
+        new file:   db/migrate/20201108004905_add_columns_to_user.rb
+        modified:   db/schema.rb
+
 2.4.9 Update authentication views 11:39  
 2.5.10 Update styles 8:28
 
